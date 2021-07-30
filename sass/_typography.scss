@@ -1,0 +1,76 @@
+// Headings 1 -5
+
+%heading {
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 900;
+
+  line-height: 1;
+}
+.heading-1 {
+  font-size: 5rem;
+  color: $color-white;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-align: center;
+
+  @extend %heading;
+}
+
+.heading-2 {
+  font-size: 3.5rem;
+  color: $color-very-dark-desaturated-blue;
+  @extend %heading;
+  @media only screen and (max-width: $bp-small) {
+    text-align: center;
+  }
+}
+
+.heading-3 {
+  font-size: 2.5rem;
+  color: $color-dark-desaturated-cyan;
+  @extend %heading;
+}
+
+.heading-4 {
+  font-size: 2rem;
+  color: $color-grayish-blue;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  @extend %heading;
+}
+
+.heading-5 {
+  font-size: 1.6rem;
+  text-align: center;
+  color: $color-very-dark-desaturated-blue;
+  @extend %heading;
+
+  & > span {
+    display: block;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    color: $color-grayish-blue;
+  }
+}
+
+// Paragraph
+.paragraph {
+  font-size: 1.6rem;
+  color: $color-grayish-blue;
+
+  @media only screen and (max-width: $bp-small) {
+    text-align: center;
+  }
+
+  &--light-cyan {
+    color: $color-dark-moderate-cyan;
+    text-align: center;
+  }
+  &--dark-cyan {
+    color: $color-dark-desaturated-cyan;
+    text-align: center;
+  }
+}

@@ -1,0 +1,15 @@
+.gallery {
+  background-color: lightsalmon;
+  grid-column: full-start / full-end;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
